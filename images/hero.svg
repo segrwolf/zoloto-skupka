@@ -1,0 +1,113 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="shine" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="200" cy="200" r="200" fill="#f9fafb"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="60" fill="#f59e0b" opacity="0.1"/>
+  <circle cx="320" cy="280" r="80" fill="#f59e0b" opacity="0.08"/>
+  
+  <!-- Main Ring -->
+  <g transform="translate(200, 120)">
+    <!-- Ring band -->
+    <circle cx="0" cy="0" r="45" fill="url(#goldGradient)"/>
+    <circle cx="0" cy="0" r="40" fill="#fff9e6"/>
+    <circle cx="0" cy="0" r="38" fill="url(#goldGradient)"/>
+    
+    <!-- Diamond/Stone -->
+    <g transform="translate(0, -35)">
+      <polygon points="0,-12 8,-5 0,8 -8,-5" fill="#e0e7ff" filter="url(#shadow)"/>
+      <polygon points="0,-10 6,-4 0,6 -6,-4" fill="#c7d2fe"/>
+      <circle cx="0" cy="-2" r="3" fill="#fff" opacity="0.6"/>
+    </g>
+    
+    <!-- Shine effect -->
+    <circle cx="0" cy="0" r="45" fill="url(#shine)"/>
+  </g>
+  
+  <!-- Chain/Necklace -->
+  <g stroke="url(#goldGradient)" stroke-width="2.5" fill="none">
+    <path d="M 150 170 Q 140 150 135 120"/>
+    <path d="M 250 170 Q 260 150 265 120"/>
+  </g>
+  
+  <!-- Link details -->
+  <g fill="url(#goldGradient)" opacity="0.7">
+    <circle cx="147" cy="165" r="1.5"/>
+    <circle cx="144" cy="157" r="1.5"/>
+    <circle cx="141" cy="149" r="1.5"/>
+    <circle cx="138" cy="141" r="1.5"/>
+    <circle cx="136" cy="133" r="1.5"/>
+    <circle cx="253" cy="165" r="1.5"/>
+    <circle cx="256" cy="157" r="1.5"/>
+    <circle cx="259" cy="149" r="1.5"/>
+    <circle cx="262" cy="141" r="1.5"/>
+    <circle cx="264" cy="133" r="1.5"/>
+  </g>
+  
+  <!-- Bracelet -->
+  <g transform="translate(200, 280)">
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#f9fafb" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Bracelet segments -->
+    <g fill="url(#goldGradient)" opacity="0.6">
+      <rect x="-4" y="-35" width="8" height="3" rx="1.5"/>
+      <rect x="25" y="-24" width="8" height="3" rx="1.5" transform="rotate(45 29 -22.5)"/>
+      <rect x="35" y="0" width="3" height="8" rx="1.5"/>
+      <rect x="25" y="24" width="8" height="3" rx="1.5" transform="rotate(45 29 25.5)"/>
+    </g>
+    
+    <!-- Shine -->
+    <circle cx="0" cy="0" r="35" fill="url(#shine)" opacity="0.3"/>
+  </g>
+  
+  <!-- Coins/Medals floating -->
+  <g transform="translate(120, 250)">
+    <circle cx="0" cy="0" r="20" fill="url(#goldGradient)"/>
+    <circle cx="0" cy="0" r="18" fill="#fff9e6" opacity="0.6"/>
+    <circle cx="0" cy="0" r="16" fill="url(#goldGradient)"/>
+    <text x="0" y="6" font-size="20" font-weight="bold" text-anchor="middle" fill="#f59e0b" opacity="0.4">₴</text>
+    <circle cx="0" cy="0" r="20" fill="url(#shine)" opacity="0.4"/>
+  </g>
+  
+  <g transform="translate(280, 260)">
+    <circle cx="0" cy="0" r="18" fill="url(#goldGradient)"/>
+    <circle cx="0" cy="0" r="16" fill="#fff9e6" opacity="0.6"/>
+    <circle cx="0" cy="0" r="14" fill="url(#goldGradient)"/>
+    <text x="0" y="5" font-size="16" font-weight="bold" text-anchor="middle" fill="#f59e0b" opacity="0.4">$</text>
+    <circle cx="0" cy="0" r="18" fill="url(#shine)" opacity="0.3"/>
+  </g>
+  
+  <!-- Sparkles -->
+  <g fill="#f59e0b" opacity="0.6">
+    <circle cx="90" cy="200" r="2"/>
+    <circle cx="320" cy="150" r="1.5"/>
+    <circle cx="100" cy="320" r="1.5"/>
+    <circle cx="310" cy="100" r="2"/>
+  </g>
+  
+  <!-- Larger sparkles as stars -->
+  <g fill="#f59e0b" opacity="0.4">
+    <path d="M 350 80 L 352 87 L 360 88 L 354 93 L 356 101 L 350 97 L 344 101 L 346 93 L 340 88 L 348 87 Z"/>
+    <path d="M 80 350 L 81 355 L 87 356 L 82 360 L 83 366 L 80 362 L 77 366 L 78 360 L 73 356 L 79 355 Z"/>
+  </g>
+  
+  <!-- Shadow definition -->
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+</svg>

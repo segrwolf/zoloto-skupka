@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="gr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c0"/>
+      <stop offset="20%" style="stop-color:#e8b923"/>
+      <stop offset="50%" style="stop-color:#c9940a"/>
+      <stop offset="80%" style="stop-color:#e8b923"/>
+      <stop offset="100%" style="stop-color:#fef3c0"/>
+    </linearGradient>
+    <linearGradient id="gd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a67c00"/>
+      <stop offset="100%" style="stop-color:#5c4200"/>
+    </linearGradient>
+    <linearGradient id="gs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8b923"/>
+      <stop offset="30%" style="stop-color:#fef3c0"/>
+      <stop offset="50%" style="stop-color:#c9940a"/>
+      <stop offset="70%" style="stop-color:#fef3c0"/>
+      <stop offset="100%" style="stop-color:#e8b923"/>
+    </linearGradient>
+    <radialGradient id="gh" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" style="stop-color:#fffbe0"/>
+      <stop offset="30%" style="stop-color:#f5d060"/>
+      <stop offset="70%" style="stop-color:#c9940a"/>
+      <stop offset="100%" style="stop-color:#8b6914"/>
+    </radialGradient>
+  </defs>
+  <g transform="translate(16,16)">
+    <!-- Outer rim -->
+    <circle cx="0" cy="0" r="11" fill="none" stroke="url(#gd)" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="11" fill="none" stroke="url(#gr)" stroke-width="1.8"/>
+    <!-- 6 spokes -->
+    <g stroke="url(#gd)" stroke-width="0.3">
+      <rect x="-0.9" y="-10" width="1.8" height="6" rx="0.5" fill="url(#gs)" transform="rotate(0)"/>
+      <rect x="-0.9" y="-10" width="1.8" height="6" rx="0.5" fill="url(#gs)" transform="rotate(60)"/>
+      <rect x="-0.9" y="-10" width="1.8" height="6" rx="0.5" fill="url(#gs)" transform="rotate(120)"/>
+      <rect x="-0.9" y="-10" width="1.8" height="6" rx="0.5" fill="url(#gs)" transform="rotate(180)"/>
+      <rect x="-0.9" y="-10" width="1.8" height="6" rx="0.5" fill="url(#gs)" transform="rotate(240)"/>
+      <rect x="-0.9" y="-10" width="1.8" height="6" rx="0.5" fill="url(#gs)" transform="rotate(300)"/>
+    </g>
+    <!-- 6 handles -->
+    <g>
+      <circle cx="0" cy="-14" r="1.8" fill="url(#gh)" stroke="url(#gd)" stroke-width="0.3"/>
+      <circle cx="12.1" cy="-7" r="1.8" fill="url(#gh)" stroke="url(#gd)" stroke-width="0.3"/>
+      <circle cx="12.1" cy="7" r="1.8" fill="url(#gh)" stroke="url(#gd)" stroke-width="0.3"/>
+      <circle cx="0" cy="14" r="1.8" fill="url(#gh)" stroke="url(#gd)" stroke-width="0.3"/>
+      <circle cx="-12.1" cy="7" r="1.8" fill="url(#gh)" stroke="url(#gd)" stroke-width="0.3"/>
+      <circle cx="-12.1" cy="-7" r="1.8" fill="url(#gh)" stroke="url(#gd)" stroke-width="0.3"/>
+    </g>
+    <!-- Hub -->
+    <circle cx="0" cy="0" r="3.5" fill="url(#gh)" stroke="url(#gd)" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="1.2" fill="url(#gd)"/>
+  </g>
+</svg>

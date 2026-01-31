@@ -1,0 +1,12 @@
+.DS_Store
+*.php
+data/
+generate_image.py
+start-server.sh
+svadministratormain/
+CHECKLIST.md
+DEPLOYMENT.md
+PROJECT.md
+README.md
+SUMMARY.md
+WELCOME.md
